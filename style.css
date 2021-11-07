@@ -1,0 +1,157 @@
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #111;
+  color: rgba(255, 255, 255, 0.788);
+  font-family: 'Pacifico', cursive;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  overflow-x: hidden;
+  margin: 0;
+}
+
+main {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 850px;
+}
+
+.panel {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  max-width: 300px;
+}
+
+.panel h2 {
+  font-size: 30px;
+}
+
+.palettes {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+}
+
+.palette {
+  height: 100px;
+  width: 100px;
+  margin: 10px;
+  border: 1px solid #000;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+@media (max-width: 850px) {
+  body {
+    height: 100%;
+  }
+
+  main {
+    justify-content: space-around;
+    height: 100%;
+  }
+
+  .panel {
+    max-width: 650px;
+    margin: 0 0 40px 0;
+    text-align: center;
+  }
+
+  .panel h2 {
+    margin-top: 30px;
+  }
+
+  .palettes {
+    flex-wrap: wrap;
+    display: inline-block;
+  }
+
+  .palette {
+    height: 80px;
+    width: 80px;
+  }
+}
+
+@media (max-width: 414px) {
+  .palette {
+    height: 55px;
+    width: 55px;
+  }
+}
+
+.palette-one {
+  background: linear-gradient(
+    0.25turn,
+    #e74c3c,
+    #8e44ad,
+    #3498db,
+    #e67e22,
+    #2ecc71
+  );
+}
+
+.palette-two {
+  background: linear-gradient(
+    0.25turn,
+    #ffff00,
+    #1e90ff,
+    #2f4f4f,
+    #0000cd,
+    #ff00ff
+  );
+}
+
+.palette-three {
+  background: linear-gradient(
+    0.25turn,
+    #01df01,
+    #00ffff,
+    #fa58d0,
+    #f81130,
+    #f27d06
+  );
+}
+
+.palette-four {
+  background: linear-gradient(
+    0.25turn,
+    #f214df,
+    #0eb3f3,
+    #84eca2,
+    #f85247,
+    #ecf403
+  );
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-wrap: wrap;
+  max-width: 400px;
+  margin-bottom: 40px;
+}
+
+.square {
+  background-color: #1d1d1d;
+  box-shadow: 0 0 2px #000;
+  height: 16px;
+  width: 16px;
+  margin: 2px;
+  transition: 2s ease;
+}
+
+.square:hover {
+  transition-duration: 0s;
+}
